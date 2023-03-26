@@ -1,0 +1,150 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/jbarbozo/Downloads/chatgpt/hakaton/api/api.csproj": {}
+  },
+  "projects": {
+    "/Users/jbarbozo/Downloads/chatgpt/hakaton/api/api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jbarbozo/Downloads/chatgpt/hakaton/api/api.csproj",
+        "projectName": "api",
+        "projectPath": "/Users/jbarbozo/Downloads/chatgpt/hakaton/api/api.csproj",
+        "packagesPath": "/Users/jbarbozo/.nuget/packages/",
+        "outputPath": "/Users/jbarbozo/Downloads/chatgpt/hakaton/api/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/jbarbozo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "targetAlias": "netcoreapp2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.AspNet.SignalR": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "Microsoft.AspNet.SignalR.Core": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "Microsoft.AspNet.SignalR.JS": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "Microsoft.AspNet.WebApi.Cors": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[2.1.4, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql.Design": {
+              "target": "Package",
+              "version": "[1.1.2, )"
+            },
+            "SendGrid": {
+              "target": "Package",
+              "version": "[9.22.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
+            "System.Security.Cryptography.Encoding": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Security.Cryptography.OpenSsl": {
+              "target": "Package",
+              "version": "[6.0.0-preview.4.21253.7, )"
+            },
+            "System.ServiceModel.Http": {
+              "target": "Package",
+              "version": "[4.5.3, )"
+            },
+            "System.ServiceModel.NetTcp": {
+              "target": "Package",
+              "version": "[4.5.3, )"
+            },
+            "System.ServiceModel.Security": {
+              "target": "Package",
+              "version": "[4.5.3, )"
+            },
+            "Vonage": {
+              "target": "Package",
+              "version": "[6.0.2-rc, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

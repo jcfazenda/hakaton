@@ -1,0 +1,117 @@
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/grc/api/api/bin/Release/netcoreapp2.1/appsettings.Development.json
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/grc/api/api/bin/Release/netcoreapp2.1/appsettings.json
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/grc/api/api/bin/Release/netcoreapp2.1/Connected Services/CorreiosWcf/ConnectedService.json
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/grc/api/api/bin/Release/netcoreapp2.1/api.deps.json
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/grc/api/api/bin/Release/netcoreapp2.1/api.runtimeconfig.json
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/grc/api/api/bin/Release/netcoreapp2.1/api.runtimeconfig.dev.json
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/grc/api/api/bin/Release/netcoreapp2.1/api.dll
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/grc/api/api/bin/Release/netcoreapp2.1/api.pdb
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/grc/api/api/obj/Release/netcoreapp2.1/api.csprojAssemblyReference.cache
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/grc/api/api/obj/Release/netcoreapp2.1/api.AssemblyInfoInputs.cache
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/grc/api/api/obj/Release/netcoreapp2.1/api.AssemblyInfo.cs
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/grc/api/api/obj/Release/netcoreapp2.1/api.csproj.CoreCompileInputs.cache
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/grc/api/api/obj/Release/netcoreapp2.1/api.RazorAssemblyInfo.cache
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/grc/api/api/obj/Release/netcoreapp2.1/api.RazorAssemblyInfo.cs
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/grc/api/api/obj/Release/netcoreapp2.1/api.RazorTargetAssemblyInfo.cache
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/grc/api/api/obj/Release/netcoreapp2.1/api.dll
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/grc/api/api/obj/Release/netcoreapp2.1/api.pdb
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/grc/api/api/obj/Release/netcoreapp2.1/api.genruntimeconfig.cache
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/egrc/api/api/bin/Release/netcoreapp2.1/appsettings.Development.json
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/egrc/api/api/bin/Release/netcoreapp2.1/appsettings.json
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/egrc/api/api/bin/Release/netcoreapp2.1/Connected Services/CorreiosWcf/ConnectedService.json
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/egrc/api/api/bin/Release/netcoreapp2.1/api.deps.json
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/egrc/api/api/bin/Release/netcoreapp2.1/api.runtimeconfig.json
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/egrc/api/api/bin/Release/netcoreapp2.1/api.runtimeconfig.dev.json
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/egrc/api/api/bin/Release/netcoreapp2.1/api.dll
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/egrc/api/api/bin/Release/netcoreapp2.1/api.pdb
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/egrc/api/api/obj/Release/netcoreapp2.1/api.csprojAssemblyReference.cache
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/egrc/api/api/obj/Release/netcoreapp2.1/api.AssemblyInfoInputs.cache
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/egrc/api/api/obj/Release/netcoreapp2.1/api.AssemblyInfo.cs
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/egrc/api/api/obj/Release/netcoreapp2.1/api.csproj.CoreCompileInputs.cache
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/egrc/api/api/obj/Release/netcoreapp2.1/api.RazorAssemblyInfo.cache
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/egrc/api/api/obj/Release/netcoreapp2.1/api.RazorAssemblyInfo.cs
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/egrc/api/api/obj/Release/netcoreapp2.1/api.RazorTargetAssemblyInfo.cache
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/egrc/api/api/obj/Release/netcoreapp2.1/api.dll
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/egrc/api/api/obj/Release/netcoreapp2.1/api.pdb
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/egrc/api/api/obj/Release/netcoreapp2.1/api.genruntimeconfig.cache
+C:/Users/jcfaz/OneDrive/Área de Trabalho/Projetos/GRC Ligth/egrc/api/api/obj/Release/netcoreapp2.1/UserSecretsAssemblyInfo.cs
+C:/Users/jcfaz/OneDrive/Área de Trabalho/GRC/egrc/api/api/bin/Release/netcoreapp2.1/appsettings.Development.json
+C:/Users/jcfaz/OneDrive/Área de Trabalho/GRC/egrc/api/api/bin/Release/netcoreapp2.1/appsettings.json
+C:/Users/jcfaz/OneDrive/Área de Trabalho/GRC/egrc/api/api/bin/Release/netcoreapp2.1/Connected Services/CorreiosWcf/ConnectedService.json
+C:/Users/jcfaz/OneDrive/Área de Trabalho/GRC/egrc/api/api/bin/Release/netcoreapp2.1/api.deps.json
+C:/Users/jcfaz/OneDrive/Área de Trabalho/GRC/egrc/api/api/bin/Release/netcoreapp2.1/api.runtimeconfig.json
+C:/Users/jcfaz/OneDrive/Área de Trabalho/GRC/egrc/api/api/bin/Release/netcoreapp2.1/api.runtimeconfig.dev.json
+C:/Users/jcfaz/OneDrive/Área de Trabalho/GRC/egrc/api/api/bin/Release/netcoreapp2.1/api.dll
+C:/Users/jcfaz/OneDrive/Área de Trabalho/GRC/egrc/api/api/bin/Release/netcoreapp2.1/api.pdb
+C:/Users/jcfaz/OneDrive/Área de Trabalho/GRC/egrc/api/api/obj/Release/netcoreapp2.1/api.csprojAssemblyReference.cache
+C:/Users/jcfaz/OneDrive/Área de Trabalho/GRC/egrc/api/api/obj/Release/netcoreapp2.1/api.AssemblyInfoInputs.cache
+C:/Users/jcfaz/OneDrive/Área de Trabalho/GRC/egrc/api/api/obj/Release/netcoreapp2.1/api.AssemblyInfo.cs
+C:/Users/jcfaz/OneDrive/Área de Trabalho/GRC/egrc/api/api/obj/Release/netcoreapp2.1/api.csproj.CoreCompileInputs.cache
+C:/Users/jcfaz/OneDrive/Área de Trabalho/GRC/egrc/api/api/obj/Release/netcoreapp2.1/api.RazorAssemblyInfo.cache
+C:/Users/jcfaz/OneDrive/Área de Trabalho/GRC/egrc/api/api/obj/Release/netcoreapp2.1/api.RazorAssemblyInfo.cs
+C:/Users/jcfaz/OneDrive/Área de Trabalho/GRC/egrc/api/api/obj/Release/netcoreapp2.1/UserSecretsAssemblyInfo.cs
+C:/Users/jcfaz/OneDrive/Área de Trabalho/GRC/egrc/api/api/obj/Release/netcoreapp2.1/api.RazorTargetAssemblyInfo.cache
+C:/Users/jcfaz/OneDrive/Área de Trabalho/GRC/egrc/api/api/obj/Release/netcoreapp2.1/api.dll
+C:/Users/jcfaz/OneDrive/Área de Trabalho/GRC/egrc/api/api/obj/Release/netcoreapp2.1/api.pdb
+C:/Users/jcfaz/OneDrive/Área de Trabalho/GRC/egrc/api/api/obj/Release/netcoreapp2.1/api.genruntimeconfig.cache
+/Users/jbarbozo/Desktop/GRC/egrc/api/api/bin/Release/netcoreapp2.1/appsettings.Development.json
+/Users/jbarbozo/Desktop/GRC/egrc/api/api/bin/Release/netcoreapp2.1/appsettings.json
+/Users/jbarbozo/Desktop/GRC/egrc/api/api/bin/Release/netcoreapp2.1/Connected Services/CorreiosWcf/ConnectedService.json
+/Users/jbarbozo/Desktop/GRC/egrc/api/api/bin/Release/netcoreapp2.1/api.deps.json
+/Users/jbarbozo/Desktop/GRC/egrc/api/api/bin/Release/netcoreapp2.1/api.runtimeconfig.json
+/Users/jbarbozo/Desktop/GRC/egrc/api/api/bin/Release/netcoreapp2.1/api.runtimeconfig.dev.json
+/Users/jbarbozo/Desktop/GRC/egrc/api/api/bin/Release/netcoreapp2.1/api.dll
+/Users/jbarbozo/Desktop/GRC/egrc/api/api/bin/Release/netcoreapp2.1/api.pdb
+/Users/jbarbozo/Desktop/GRC/egrc/api/api/obj/Release/netcoreapp2.1/api.csproj.AssemblyReference.cache
+/Users/jbarbozo/Desktop/GRC/egrc/api/api/obj/Release/netcoreapp2.1/api.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jbarbozo/Desktop/GRC/egrc/api/api/obj/Release/netcoreapp2.1/api.AssemblyInfoInputs.cache
+/Users/jbarbozo/Desktop/GRC/egrc/api/api/obj/Release/netcoreapp2.1/api.AssemblyInfo.cs
+/Users/jbarbozo/Desktop/GRC/egrc/api/api/obj/Release/netcoreapp2.1/api.csproj.CoreCompileInputs.cache
+/Users/jbarbozo/Desktop/GRC/egrc/api/api/obj/Release/netcoreapp2.1/api.RazorAssemblyInfo.cache
+/Users/jbarbozo/Desktop/GRC/egrc/api/api/obj/Release/netcoreapp2.1/api.RazorAssemblyInfo.cs
+/Users/jbarbozo/Desktop/GRC/egrc/api/api/obj/Release/netcoreapp2.1/UserSecretsAssemblyInfo.cs
+/Users/jbarbozo/Desktop/GRC/egrc/api/api/obj/Release/netcoreapp2.1/api.RazorTargetAssemblyInfo.cache
+/Users/jbarbozo/Desktop/GRC/egrc/api/api/obj/Release/netcoreapp2.1/api.dll
+/Users/jbarbozo/Desktop/GRC/egrc/api/api/obj/Release/netcoreapp2.1/api.pdb
+/Users/jbarbozo/Desktop/GRC/egrc/api/api/obj/Release/netcoreapp2.1/api.genruntimeconfig.cache
+D:/projeto/freelancer/EGRC/Backend/api/api/bin/Release/netcoreapp2.1/appsettings.Development.json
+D:/projeto/freelancer/EGRC/Backend/api/api/bin/Release/netcoreapp2.1/appsettings.json
+D:/projeto/freelancer/EGRC/Backend/api/api/bin/Release/netcoreapp2.1/Connected Services/CorreiosWcf/ConnectedService.json
+D:/projeto/freelancer/EGRC/Backend/api/api/bin/Release/netcoreapp2.1/app.yaml
+D:/projeto/freelancer/EGRC/Backend/api/api/bin/Release/netcoreapp2.1/api.deps.json
+D:/projeto/freelancer/EGRC/Backend/api/api/bin/Release/netcoreapp2.1/api.runtimeconfig.json
+D:/projeto/freelancer/EGRC/Backend/api/api/bin/Release/netcoreapp2.1/api.runtimeconfig.dev.json
+D:/projeto/freelancer/EGRC/Backend/api/api/bin/Release/netcoreapp2.1/api.dll
+D:/projeto/freelancer/EGRC/Backend/api/api/bin/Release/netcoreapp2.1/api.pdb
+D:/projeto/freelancer/EGRC/Backend/api/api/obj/Release/netcoreapp2.1/api.csproj.AssemblyReference.cache
+D:/projeto/freelancer/EGRC/Backend/api/api/obj/Release/netcoreapp2.1/api.GeneratedMSBuildEditorConfig.editorconfig
+D:/projeto/freelancer/EGRC/Backend/api/api/obj/Release/netcoreapp2.1/api.AssemblyInfoInputs.cache
+D:/projeto/freelancer/EGRC/Backend/api/api/obj/Release/netcoreapp2.1/api.AssemblyInfo.cs
+D:/projeto/freelancer/EGRC/Backend/api/api/obj/Release/netcoreapp2.1/api.csproj.CoreCompileInputs.cache
+D:/projeto/freelancer/EGRC/Backend/api/api/obj/Release/netcoreapp2.1/api.RazorAssemblyInfo.cache
+D:/projeto/freelancer/EGRC/Backend/api/api/obj/Release/netcoreapp2.1/api.RazorAssemblyInfo.cs
+D:/projeto/freelancer/EGRC/Backend/api/api/obj/Release/netcoreapp2.1/UserSecretsAssemblyInfo.cs
+D:/projeto/freelancer/EGRC/Backend/api/api/obj/Release/netcoreapp2.1/api.RazorTargetAssemblyInfo.cache
+D:/projeto/freelancer/EGRC/Backend/api/api/obj/Release/netcoreapp2.1/api.dll
+D:/projeto/freelancer/EGRC/Backend/api/api/obj/Release/netcoreapp2.1/api.pdb
+D:/projeto/freelancer/EGRC/Backend/api/api/obj/Release/netcoreapp2.1/api.genruntimeconfig.cache
+/Users/jbarbozo/Downloads/Nakatom/chat/api/api/bin/Release/netcoreapp2.1/appsettings.Development.json
+/Users/jbarbozo/Downloads/Nakatom/chat/api/api/bin/Release/netcoreapp2.1/appsettings.json
+/Users/jbarbozo/Downloads/Nakatom/chat/api/api/bin/Release/netcoreapp2.1/Connected Services/CorreiosWcf/ConnectedService.json
+/Users/jbarbozo/Downloads/Nakatom/chat/api/api/bin/Release/netcoreapp2.1/api.deps.json
+/Users/jbarbozo/Downloads/Nakatom/chat/api/api/bin/Release/netcoreapp2.1/api.runtimeconfig.json
+/Users/jbarbozo/Downloads/Nakatom/chat/api/api/bin/Release/netcoreapp2.1/api.runtimeconfig.dev.json
+/Users/jbarbozo/Downloads/Nakatom/chat/api/api/bin/Release/netcoreapp2.1/api.dll
+/Users/jbarbozo/Downloads/Nakatom/chat/api/api/bin/Release/netcoreapp2.1/api.pdb
+/Users/jbarbozo/Downloads/Nakatom/chat/api/api/obj/Release/netcoreapp2.1/api.csproj.AssemblyReference.cache
+/Users/jbarbozo/Downloads/Nakatom/chat/api/api/obj/Release/netcoreapp2.1/api.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jbarbozo/Downloads/Nakatom/chat/api/api/obj/Release/netcoreapp2.1/api.AssemblyInfoInputs.cache
+/Users/jbarbozo/Downloads/Nakatom/chat/api/api/obj/Release/netcoreapp2.1/api.AssemblyInfo.cs
+/Users/jbarbozo/Downloads/Nakatom/chat/api/api/obj/Release/netcoreapp2.1/api.csproj.CoreCompileInputs.cache
+/Users/jbarbozo/Downloads/Nakatom/chat/api/api/obj/Release/netcoreapp2.1/api.RazorAssemblyInfo.cache
+/Users/jbarbozo/Downloads/Nakatom/chat/api/api/obj/Release/netcoreapp2.1/api.RazorAssemblyInfo.cs
+/Users/jbarbozo/Downloads/Nakatom/chat/api/api/obj/Release/netcoreapp2.1/UserSecretsAssemblyInfo.cs
+/Users/jbarbozo/Downloads/Nakatom/chat/api/api/obj/Release/netcoreapp2.1/api.RazorTargetAssemblyInfo.cache
+/Users/jbarbozo/Downloads/Nakatom/chat/api/api/obj/Release/netcoreapp2.1/api.dll
+/Users/jbarbozo/Downloads/Nakatom/chat/api/api/obj/Release/netcoreapp2.1/api.pdb
+/Users/jbarbozo/Downloads/Nakatom/chat/api/api/obj/Release/netcoreapp2.1/api.genruntimeconfig.cache

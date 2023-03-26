@@ -1,0 +1,12 @@
+runtime: aspnetcore
+env: flex
+service: egrc-api-hmg
+network:
+    name: projects/exyon-infra-network/global/networks/vpc-exyon-network
+    subnetwork_name: subnet-grc-hmg-br
+manual_scaling:
+  instances: 1
+resources:
+  cpu: 1
+  memory_gb: 0.5
+  disk_size_gb: 10

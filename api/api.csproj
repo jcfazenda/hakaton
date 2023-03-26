@@ -1,0 +1,444 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <UserSecretsId>081f52cf-c0da-4304-9f6c-398dddc82388</UserSecretsId>
+    <BaseOutputPath>bin</BaseOutputPath>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+    <Folder Include="Domain\Views\Output\Message\" />
+    <Folder Include="Domain\Mapping\Message\" />
+    <Folder Include="Domain\Repository\Interface\Message\" />
+    <Folder Include="Domain\Repository\Queryable\Message\" />
+    <Folder Include="Controllers\voice\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!--<PackageReference Include="Affecto.Authentication.Claims" Version="2.5.0" />-->
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNet.SignalR" Version="2.4.1" />
+    <PackageReference Include="Microsoft.AspNet.SignalR.Core" Version="2.4.1" />
+    <PackageReference Include="Microsoft.AspNet.SignalR.JS" Version="2.4.1" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Cors" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.1.4" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql.Design" Version="1.1.2" />
+    <PackageReference Include="SendGrid" Version="9.22.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="System.Security.Cryptography.Encoding" Version="4.3.0" />
+    <PackageReference Include="System.ServiceModel.Http" Version="4.5.3" />
+    <PackageReference Include="System.ServiceModel.NetTcp" Version="4.5.3" />
+    <PackageReference Include="System.ServiceModel.Security" Version="4.5.3" />
+    <PackageReference Include="System.Security.Cryptography.OpenSsl" Version="6.0.0-preview.4.21253.7" />
+    <PackageReference Include="Vonage" Version="6.0.2-rc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="System.Security.Cryptography.OpenSsl" />
+    <None Remove="Domain\Views\Output\Message\" />
+    <None Remove="Domain\Mapping\Message\" />
+    <None Remove="Domain\Repository\Interface\Message\" />
+    <None Remove="Domain\Repository\Queryable\Message\" />
+    <None Remove="Controllers\voice\" />
+    <None Remove="Vonage" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\Apontamentos\ApontamentoController.cs" />
+    <Compile Remove="Controllers\UnidadesOrganizacionais\UnidadeOrganizacionalController.cs" />
+    <Compile Remove="Controllers\Generics\ListGenericsInput.cs" />
+    <Compile Remove="Controllers\Generics\CepConsulta.cs" />
+    <Compile Remove="Controllers\Generics\GenericsController.cs" />
+    <Compile Remove="Controllers\Generics\ListGenericsOutput.cs" />
+    <Compile Remove="Controllers\Generics\ListItems.cs" />
+    <Compile Remove="Controllers\LGPD\LgpdTipoController.cs" />
+    <Compile Remove="Controllers\LGPD\LgpdQuizProcessoController.cs" />
+    <Compile Remove="Controllers\LGPD\LgpdApontamentoProcessoController.cs" />
+    <Compile Remove="Controllers\LGPD\LgpdQuizController.cs" />
+    <Compile Remove="Controllers\LGPD\LgpdTipoDadosController.cs" />
+    <Compile Remove="Controllers\Inventarios\InventarioController.cs" />
+    <Compile Remove="Controllers\Inventarios\InventarioProcessoController.cs" />
+    <Compile Remove="Controllers\PlanosAcao\PlanoAcaoController.cs" />
+    <Compile Remove="Controllers\PlanosAcao\PlanoAcaoApontamentoPlanoController.cs" />
+    <Compile Remove="Controllers\PlanosAcao\PlanoAcaoStepController.cs" />
+    <Compile Remove="Controllers\PlanosAcao\PlanoAcaoFluxoAprovacaoController.cs" />
+    <Compile Remove="Controllers\PlanosAcao\PlanoAcaoControleController.cs" />
+    <Compile Remove="Controllers\Processos\ProcessoController.cs" />
+    <Compile Remove="Controllers\Processos\ProcessoNivelController.cs" />
+    <Compile Remove="Controllers\Processos\ProcessoEmpresaController.cs" />
+    <Compile Remove="Controllers\Processos\ProcessoUnidadeOrganizacionalController.cs" />
+    <Compile Remove="Controllers\Processos\ProcessoLinhaNegocioController.cs" />
+    <Compile Remove="Controllers\Processos\ProcessoResponsavelController.cs" />
+    <Compile Remove="Controllers\Processos\ProcessoAnexoController.cs" />
+    <Compile Remove="Controllers\Processos\ProcessoProcessoController.cs" />
+    <Compile Remove="Controllers\Processos\ProcessoRiscoController.cs" />
+    <Compile Remove="Controllers\Risco\RiscoCausaController.cs" />
+    <Compile Remove="Controllers\Risco\RiscoCategoriaController.cs" />
+    <Compile Remove="Controllers\Risco\RiscoAvaliacaoController.cs" />
+    <Compile Remove="Controllers\Risco\RiscoIncidenteController.cs" />
+    <Compile Remove="Controllers\Risco\RiscoRiscoController.cs" />
+    <Compile Remove="Controllers\Risco\CausasController.cs" />
+    <Compile Remove="Controllers\Risco\RiscoResponsavelController.cs" />
+    <Compile Remove="Controllers\Risco\RiscoAvaliacaoWorflowController.cs" />
+    <Compile Remove="Controllers\Risco\RiscoFatorController.cs" />
+    <Compile Remove="Controllers\Risco\CausaCategoriaController.cs" />
+    <Compile Remove="Controllers\Risco\ApontamentoController.cs" />
+    <Compile Remove="Controllers\Risco\RiscosController.cs" />
+    <Compile Remove="Controllers\Risco\RiscoAvaliacaoMatrizController.cs" />
+    <Compile Remove="Controllers\Risco\RiscoProcessoController.cs" />
+    <Compile Remove="Controllers\Risco\RiscoPlanoAcaoController.cs" />
+    <Compile Remove="Controllers\Risco\ImpactoController.cs" />
+    <Compile Remove="Controllers\Risco\RiscoControleController.cs" />
+    <Compile Remove="Controllers\Risco\RiscoImpactoController.cs" />
+    <Compile Remove="Controllers\Risco\CategoriaRiscoController.cs" />
+    <Compile Remove="Controllers\Risco\FatorRiscoController.cs" />
+    <Compile Remove="Controllers\Departamentos\DepartamentoController.cs" />
+    <Compile Remove="Controllers\Indice\MatrizItemController.cs" />
+    <Compile Remove="Controllers\Indice\IndiceFinanceiroController.cs" />
+    <Compile Remove="Controllers\Indice\MatrizItemCorController.cs" />
+    <Compile Remove="Controllers\Indice\MatrizController.cs" />
+    <Compile Remove="Controllers\Indice\PerfilAnaliseController.cs" />
+    <Compile Remove="Controllers\Grafics\DashboardController.cs" />
+    <Compile Remove="Controllers\Grafics\DashboardUsuarioController.cs" />
+    <Compile Remove="Controllers\PerfisAcesso\Telas\TelaFuncaoController.cs" />
+    <Compile Remove="Controllers\PerfisAcesso\Telas\NivelAcessoTelaRegistroController.cs" />
+    <Compile Remove="Controllers\PerfisAcesso\Telas\TelaController.cs" />
+    <Compile Remove="Controllers\PerfisAcesso\Telas\NivelAcessoUsuarioController.cs" />
+    <Compile Remove="Controllers\PerfisAcesso\Telas\NivelAcessoController.cs" />
+    <Compile Remove="Controllers\PerfisAcesso\Telas\NivelAcessoTelaFuncaoController.cs" />
+    <Compile Remove="Controllers\WorkFlow\WorkflowStatusController.cs" />
+    <Compile Remove="Controllers\Testes\TesteProcedimentoTipoController.cs" />
+    <Compile Remove="Controllers\Testes\TesteAnexoController.cs" />
+    <Compile Remove="Controllers\Testes\TesteProcedimentoAnexoController.cs" />
+    <Compile Remove="Controllers\Testes\TesteProcedimentoAmostraAnexoController.cs" />
+    <Compile Remove="Controllers\Testes\TesteProcedimentoAmostraController.cs" />
+    <Compile Remove="Controllers\Testes\TesteProcedimentoController.cs" />
+    <Compile Remove="Controllers\Testes\TesteProcedimentoNaturezaItemController.cs" />
+    <Compile Remove="Controllers\Testes\TesteStatusHistoricoController.cs" />
+    <Compile Remove="Controllers\Testes\TesteProcedimentoAmostraExecucaoAtributoController.cs" />
+    <Compile Remove="Controllers\Testes\TesteProcedimentoNaturezaController.cs" />
+    <Compile Remove="Controllers\Testes\TesteApontamentoTesteController.cs" />
+    <Compile Remove="Controllers\Testes\TesteSatusController.cs" />
+    <Compile Remove="Controllers\Testes\TesteController.cs" />
+    <Compile Remove="Controllers\Testes\TesteProcedimentoAmostraExecucaoController.cs" />
+    <Compile Remove="Controllers\Testes\TesteFluxoAprovacaoController.cs" />
+    <Compile Remove="Controllers\Empresas\EmpresaDiagramaController.cs" />
+    <Compile Remove="Controllers\Empresas\EmpresaClassificacaoController.cs" />
+    <Compile Remove="Controllers\Empresas\EmpresaAcaoSocietariaItemController.cs" />
+    <Compile Remove="Controllers\Empresas\EmpresaLinhaNegocioController.cs" />
+    <Compile Remove="Controllers\Empresas\EmpresaController.cs" />
+    <Compile Remove="Controllers\Empresas\EmpresaEnderecoController.cs" />
+    <Compile Remove="Controllers\Empresas\EmpresaAcionistaController.cs" />
+    <Compile Remove="Controllers\Empresas\EmpresaRiscoController.cs" />
+    <Compile Remove="Controllers\Empresas\OrgaoReguladorController.cs" />
+    <Compile Remove="Controllers\Empresas\EmpresaAcionistaAcaoSocietariaController.cs" />
+    <Compile Remove="Controllers\Empresas\LinhaNegocioController.cs" />
+    <Compile Remove="Controllers\Templates\Emails\TemplateEmailController.cs" />
+    <Compile Remove="Controllers\Compliances\ComplianceNormaTrechoRiscoController.cs" />
+    <Compile Remove="Controllers\Compliances\ComplianceNormaEmpresaController.cs" />
+    <Compile Remove="Controllers\Compliances\ComplianceNormaController.cs" />
+    <Compile Remove="Controllers\Compliances\ComplianceNormaTipoController.cs" />
+    <Compile Remove="Controllers\Compliances\ComplianceNormaEmpresaContraparteController.cs" />
+    <Compile Remove="Controllers\Compliances\ComplianceNormaTrechoController.cs" />
+    <Compile Remove="Controllers\Incidentes\IncidenteCategoriaController.cs" />
+    <Compile Remove="Controllers\Incidentes\IncidenteFluxoAprovacaoController.cs" />
+    <Compile Remove="Controllers\Incidentes\IncidenteController.cs" />
+    <Compile Remove="Controllers\Controles\ControleFrequenciaController.cs" />
+    <Compile Remove="Controllers\Controles\ControleDemonstracaoFinanceiraControleController.cs" />
+    <Compile Remove="Controllers\Controles\ControleTipoController.cs" />
+    <Compile Remove="Controllers\Controles\ControleObjetivoController.cs" />
+    <Compile Remove="Controllers\Controles\ControleObjetivoControleController.cs" />
+    <Compile Remove="Controllers\Controles\ControleController.cs" />
+    <Compile Remove="Controllers\Controles\ControleCategoriaObjetivoController.cs" />
+    <Compile Remove="Controllers\Controles\ControleCategoriaController.cs" />
+    <Compile Remove="Controllers\Controles\ControleResponsavelController.cs" />
+    <Compile Remove="Controllers\Controles\ControleAfirmacaoControleController.cs" />
+    <Compile Remove="Controllers\Controles\ControleDemonstracaoFinanceiraController.cs" />
+    <Compile Remove="Controllers\Controles\ControleGrauAutomacaoController.cs" />
+    <Compile Remove="Controllers\Controles\ControleTesteController.cs" />
+    <Compile Remove="Controllers\Controles\ControleAfirmacaoController.cs" />
+    <Compile Remove="Controllers\CarrieMessage\CorreioController.cs" />
+    <Compile Remove="Controllers\CarrieMessage\MessageController.cs" />
+    <Compile Remove="Domain\Mapping\Usuario\UsuarioCargoAtividadeMap.cs" />
+    <Compile Remove="Domain\Mapping\Usuario\UsuarioAreaAtuacaoMap.cs" />
+    <Compile Remove="Domain\Mapping\Usuario\UsuarioGrupoClasseMap.cs" />
+    <Compile Remove="Domain\Models\Usuario\UsuarioAreaAtuacao.cs" />
+    <Compile Remove="Domain\Models\Usuario\UsuarioCargoAtividade.cs" />
+    <Compile Remove="Domain\Models\Usuario\UsuarioGrupoClasse.cs" />
+    <Compile Remove="Domain\Repository\Interface\Apontamentos\IApontamentoCategoriaRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\UnidadesOrganizacionais\IUnidadeOrganizacionalOrgaoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\UnidadesOrganizacionais\IUnidadeOrganizacionalRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\UnidadesOrganizacionais\IUnidadeOrganizacionalResponsabilidadeRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\LGPD\ILgpdApontamentoProcessoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\LGPD\ILgpdTipoDadosRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\LGPD\ILgpdTipoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\LGPD\ILgpdQuizRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\LGPD\ILgpdQuizProcessoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Inventarios\IInventarioProcessoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Inventarios\IInventarioRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\PlanosAcao\IPlanoAcaoApontamentoPlanoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\PlanosAcao\IPlanoAcaoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\PlanosAcao\IPlanoAcaoFluxoAprovacaoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\PlanosAcao\IPlanoAcaoControleRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\PlanosAcao\IPlanoAcaoStep.cs" />
+    <Compile Remove="Domain\Repository\Interface\PlanosAcao\IPlanoAcaoRiscoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\PlanosAcao\IStepStatusTepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\PlanosAcao\IPlanoAcaoStatusRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Processos\IProcessoUnidadeOrganizacionalRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Processos\IProcessoAnexoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Processos\IProcessoRiscoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Processos\IProcessoLinhaNegocioRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Processos\IProcessoProcessoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Processos\IProcessoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Processos\ILinhaNegocioRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Processos\IProcessoNivelRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Processos\IProcessoResponsavelRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Processos\IProcessoEmpresaRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Risco\IRiscoControleRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Risco\IRiscoFatorRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Risco\ICategoriaRiscoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Risco\IRiscoAvaliacaoMatrizRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Risco\IRiscoAvaliacaoWorkflowAnexoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Risco\IRiscoPlanoAcaoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Risco\IRiscoProcessoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Risco\IRiscoCausaRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Risco\IRiscosRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Risco\IRiscoRiscoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Risco\ICausasRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Risco\IFatorRiscoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Risco\ICausaCategoriaRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Risco\IRiscoImpactoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Risco\IRiscoTratamentoTipoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Risco\IRiscoAvaliacaoStatusRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Risco\IRiscoIncidenteRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Risco\IRiscoAvaliacaoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Risco\IImpactoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Risco\RiscoAvaliacaoWorkflowRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Risco\IRiscoResponsavelRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Risco\IRiscoCategoriaRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Apontamentos\IApontamentoClassificacaoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Apontamentos\IApontamentoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Departamentos\IDepartamentoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Indice\IIndiceFinanceiroRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Indice\IPerfilAnaliseRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Indice\IMatrizItemCorRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Indice\IMatrizItemRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Indice\IMatrizRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Estados\IEstadoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Grafics\IDashboardUsuarioRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Grafics\IDashboardRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\PerfisAcesso\Telas\ITelaFuncaoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\PerfisAcesso\Telas\ITelaRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\PerfisAcesso\Telas\INivelAcessoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\PerfisAcesso\Telas\INivelAcessoTelaFuncaoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\PerfisAcesso\Telas\INivelAcessoUsuarioRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\PerfisAcesso\Telas\INivelAcessoTelaRegistroRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\WorkFlow\IWorkFlowStatusRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Testes\ITesteProcedimentoAmostraRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Testes\ITesteRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Testes\ITesteProcedimentoTipoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Testes\ITesteAnexoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Testes\ITesteProcedimentoAmostraAnexoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Testes\ITesteStatusRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Testes\ITesteStatusHistoricoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Testes\ITesteProcedimentoAmostraExecucaoAtributoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Testes\ITesteProcedimentoNaturezaItemRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Testes\ITesteProcedimentoNaturezaRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Testes\ITesteFluxoAprovacaoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Testes\ITesteProcedimentoAnexoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Testes\ITesteApontamentoTesteRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Testes\ITesteProcedimentoAmostraExecucaoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Testes\ITesteProcedimentoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Empresas\IEmpresaAcionistaRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Empresas\IEmpresaAcaoSocietariaItemRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Empresas\IOrgaoReguladorRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Empresas\IEmpresaEnderecoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Empresas\IEmpresaAcionistaAcaoSocietariaRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Empresas\IEmpresaLinhaNegocioRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Empresas\IAcionistaRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Empresas\IEmpresaRiscoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Empresas\IEmpresaDiagramaRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Empresas\IEmpresaClassificacaoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Empresas\IEmpresaRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Templates\Emails\ITemplateEmailRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Compliances\IComplianceNormaRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Compliances\ICompliancePeriodoRevisaoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Compliances\IComplianceNormaEmpresaRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Compliances\IComplianceNormaTrechoRiscoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Compliances\IComplianceNormaTrechoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Compliances\IComplianceNormaEmpresaContraparteRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Compliances\IComplianceNormaTipoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Compliances\IComplianceCriticidadeRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Incidentes\IIncidenteCategoriaRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Incidentes\IIncidenteFluxoAprovacaoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Incidentes\IIncidenteRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Controles\IControleTesteRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Controles\IControleRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Controles\IControleAfirmacaoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Controles\IControleCategoriaObjetivoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Controles\IControleDemonstracaoFinanceiraControleRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Controles\IControleTipoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Controles\IControleFrequenciaRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Controles\IControleCategoriaRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Controles\IControleDemonstracaoFinanceiraRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Controles\IControleObjetivoControleRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Controles\IControleGrauAutomacaoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Controles\IControleObjetivoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Controles\IControleResponsavelRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Controles\IControleAfirmacaoControleRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\CarrieMessage\ICorreioRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\CarrieMessage\ICorreioTipoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Usuario\IUsuarioCargoAtividadeRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Usuario\IUsuarioAreaAtuacaoRepository.cs" />
+    <Compile Remove="Domain\Repository\Interface\Usuario\IUsuarioGrupoClasseRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Apontamentos\ApontamentoCategoriaRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\UnidadesOrganizacionais\UnidadeOrganizacionalResponsabilidadeRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\UnidadesOrganizacionais\UnidadeOrganizacionalOrgaoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\UnidadesOrganizacionais\UnidadeOrganizacionalRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\LGPD\LgpdTipoDadosRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\LGPD\LgpdQuizRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\LGPD\LgpdApontamentoProcessoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\LGPD\LgpdQuizProcessoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\LGPD\LgpdTipoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Inventarios\InventarioProcessoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Inventarios\InventarioRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\PlanosAcao\StepStatusRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\PlanosAcao\PlanoAcaoControleRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\PlanosAcao\PlanoAcaoFluxoAprovacaoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\PlanosAcao\PlanoAcaoStepRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\PlanosAcao\PlanoAcaoStatusRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\PlanosAcao\PlanoAcaoApontamentoPlanoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\PlanosAcao\PlanoAcaoRiscoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\PlanosAcao\PlanoAcaoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Processos\LinhaNegocioRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Processos\ProcessoRiscoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Processos\ProcessoProcessoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Processos\ProcessoAnexoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Processos\ProcessoResponsavelRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Processos\ProcessoLinhaNegocioRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Processos\ProcessoUnidadeOrganizacionalRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Processos\ProcessoEmpresaRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Processos\ProcessoNivelRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Processos\ProcessoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Risco\FatorRiscoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Risco\CategoriaRiscoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Risco\RiscoImpactoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Risco\RiscoControleRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Risco\ImpactoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Risco\RiscoTratamentoTipoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Risco\RiscoPlanoAcaoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Risco\RiscoAvaliacaoWorkflowAnexoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Risco\RiscoProcessoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Risco\RiscoAvaliacaoMatrizRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Risco\RiscosRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Risco\CausaCategoriaRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Risco\RiscoFatorRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Risco\RiscoResponsavelRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Risco\CausasRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Risco\RiscoRiscoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Risco\RiscoIncidenteRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Risco\RiscoAvaliacaoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Risco\RiscoAvaliacaoWorkflowRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Risco\RiscoAvaliacaoStatusRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Risco\RiscoCategoriaRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Risco\RiscoCausaRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Apontamentos\ApontamentoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Apontamentos\ApontamentoClassificacaoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Departamentos\DepartamentoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Indice\PerfilAnaliseRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Indice\MatrizRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Indice\MatrizItemCorRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Indice\IndiceFinanceiroRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Indice\MatrizItemRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Estados\EstadosRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Grafics\DashboardUsuarioRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Grafics\DashboardRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\PerfisAcesso\Telas\NivelAcessoTelaFuncaoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\PerfisAcesso\Telas\NivelAcessoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\PerfisAcesso\Telas\NivelAcessoUsuarioRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\PerfisAcesso\Telas\TelaRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\PerfisAcesso\Telas\NivelAcessoTelaRegistroRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\PerfisAcesso\Telas\TelaFuncaoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\WorkFlow\WorkFlowStatusRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Testes\TesteFluxoAprovacaoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Testes\TesteProcedimentoAmostraExecucaoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Testes\TesteRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Testes\TesteApontamentoTesteRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Testes\TesteProcedimentoNaturezaRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Testes\TesteProcedimentoAmostraExecucaoAtributoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Testes\TesteStatusHistoricoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Testes\TesteStatusRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Testes\TesteProcedimentoNaturezaItemRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Testes\TesteProcedimentoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Testes\TesteProcedimentoAmostraRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Testes\TesteProcedimentoAmostraAnexoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Testes\TesteProcedimentoAnexoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Testes\TesteAnexoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Testes\TesteProcedimentoTipoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Empresas\EmpresaAcionistaAcaoSocietariaRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Empresas\OrgaoReguladorRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Empresas\EmpresaRiscoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Empresas\EmpresaAcionistaRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Empresas\EmpresaEnderecoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Empresas\EmpresaRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Empresas\EmpresaLinhaNegocioRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Empresas\EmpresaAcaoSocietariaItemRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Empresas\AcionistaRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Empresas\EmpresaClassificacaoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Empresas\EmpresaDiagramaRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Templates\Emails\TemplateEmailRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Compliances\ComplianceNormaTrechoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Compliances\ComplianceNormaEmpresaContraparteRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Compliances\ComplianceNormaTipoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Compliances\ComplianceNormaRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Compliances\ComplianceNormaEmpresaRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Compliances\ComplianceCriticidadeRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Compliances\ComplianceNormaTrechoRiscoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Compliances\CompliancePeriodoRevisaoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Incidentes\IncidenteRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Incidentes\IncidenteFluxoAprovacaoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Incidentes\IncidenteCategoriaRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Controles\ControleAfirmacaoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Controles\ControleTesteRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Controles\ControleDemonstracaoFinanceiraRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Controles\ControleGrauAutomacaoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Controles\ControleAfirmacaoControleRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Controles\ControleResponsavelRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Controles\ControleCategoriaRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Controles\ControleCategoriaObjetivoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Controles\ControleRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Controles\ControleObjetivoControleRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Controles\ControleObjetivoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Controles\ControleTipoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Controles\ControleDemonstracaoFinanceiraControleRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Controles\ControleFrequenciaRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\CarrieMessage\CorreioTipoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\CarrieMessage\CorreioRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Usuario\UsuarioCargoAtividadeRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Usuario\UsuarioAreaAtuacaoRepository.cs" />
+    <Compile Remove="Domain\Repository\Queryable\Usuario\UsuarioGrupoClasseRepository.cs" />
+    <Compile Remove="Domain\Views\Input\Usuario\UsuarioGrupoClasseInput.cs" />
+    <Compile Remove="Domain\Views\Input\Usuario\UsuarioAreaAtuacaoInput.cs" />
+    <Compile Remove="Domain\Views\Input\Usuario\UsuarioCargoAtividadeInput.cs" />
+    <Compile Remove="Domain\Views\Output\Usuario\UsuarioGrupoClasseOutput.cs" />
+    <Compile Remove="Domain\Views\Output\Usuario\UsuarioAreaAtuacaoOutput.cs" />
+    <Compile Remove="Domain\Views\Output\Usuario\UsuarioCargoAtividadeOutput.cs" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <Policies>
+          <TextStylePolicy TabWidth="4" IndentWidth="4" RemoveTrailingWhitespace="True" NoTabsAfterNonTabs="False" EolMarker="Native" FileWidth="80" TabsToSpaces="True" scope="text/x-web" />
+        </Policies>
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+</Project>
